@@ -6,13 +6,14 @@
         <meta name="description" content="" />
         <meta name="keywords" content="" />
         <link rel="icon" href="assets/images/" sizes="35x35" type="image/png">
-        <title>Oce family reunion | 404</title>
+        <title>Oce family reunion | Cart</title>
 
         <link rel="stylesheet" href="assets/css/all.min.css">
         <link rel="stylesheet" href="assets/css/flaticon.css">
         <link rel="stylesheet" href="assets/css/animate.min.css">
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+        <link rel="stylesheet" href="assets/css/jquery.bootstrap-touchspin.min.css">
         <link rel="stylesheet" href="assets/css/perfect-scrollbar.css">
         <link rel="stylesheet" href="assets/css/slick.css">
         <link rel="stylesheet" href="assets/css/style.css">
@@ -26,16 +27,15 @@
                     <div class="logo-menu-wrap w-100 d-flex flex-wrap justify-content-between align-items-start">
                         <div class="logo"><h1 class="mb-0"><a href="index.html" title="Home"><img class="img-fluid" src="assets/images/" alt="Logo" srcset="assets/images/"></a></h1></div><!-- Logo -->
                         <nav class="d-inline-flex align-items-center">
-                            <div class="header-left">
+                           <div class="header-left">
                                 <ul class="mb-0 list-unstyled d-inline-flex">
-                                    <li class="menu-item-has-children"><a href="index.html" title="">Home</a></li>
-                                    <li class="menu-item-has-children"><a href="events.html" title="">Events</a>
+                                    <li><a href="index.html" title="">Home</a></li>
+                                    <li class="menu-item-has-children"><a href="FamilyEvent.html" title="">Events</a>
                                         <ul class="children mb-0 list-unstyled">
-                                            <li><a href="event-schedule.html" title="">Event Schedule</a></li>
+                                            <li><a href="FamilySchedule.html" title="">Family Schedule</a></li>
                                         </ul>
                                     </li>
-                                    <li class="menu-item-has-children"><a href="FamilyShop.html" title="">Shop</a></li>
-                                    <li class="menu-item-has-children"><a href="Blog.html" title="">Blog</a></li>
+                                    <li><a href="FamilyShop.html" title="">Shop</a>
                                     <li><a href="about.html" title="">About</a></li>
                                     <li><a href="contact.html" title="">Contact</a></li>
                                 </ul>
@@ -49,6 +49,23 @@
                     </div><!-- Logo Menu Wrap -->
                 </div>
             </header><!-- Header -->
+            <div class="menu-wrap">
+                <span class="menu-close"><i class="fas fa-times"></i></span>
+                <ul class="mb-0 list-unstyled w-100">
+                    <li class="menu-item-has-children"><a href="index.html" title="">Home</a></li>
+                    <li class="menu-item-has-children"><a href="events.html" title="">Events</a></li>
+                    <li class="menu-item-has-children"><a href="Blog.html" title="">Blog</a></li>
+                    <li class="menu-item-has-children"><a href="FamilyShop.html" title="">Shop</a></li>
+                    <li><a href="about.html" title="">About</a></li>
+                    <li><a href="contact.html" title="">Contact</a></li>
+                </ul>
+                <div class="social-links4 d-flex flex-wrap">
+                    <a class="facebook" href="javascript:void(0);" title="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a class="pinterest" href="javascript:void(0);" title="Pinterest" target="_blank"><i class="fab fa-pinterest-p"></i></a>
+                    <a class="twitter" href="javascript:void(0);" title="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a class="vimeo" href="javascript:void(0);" title="Vimeo" target="_blank"><i class="fab fa-vimeo-v"></i></a>
+                </div>
+            </div><!-- Menu Wrap -->
             <div class="header-search d-flex flex-wrap justify-content-center align-items-center w-100">
                 <span class="search-close-btn"><i class="fas fa-times"></i></span>
                 <form>
@@ -71,30 +88,97 @@
                     <div class="fixed-bg" style="background-image: url(assets/images/parallax8.jpg);"></div>
                     <div class="container">
                         <div class="page-title-inner d-inline-block">
-                            <h1 class="mb-0">404 Error</h1>
+                            <h1 class="mb-0">Shopping Cart</h1>
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="index.html" title="">Home</a></li>
-                                <li class="breadcrumb-item active">404 Error</li>
+                                <li class="breadcrumb-item"><a href="products.html" title="">Products</a></li>
+                                <li class="breadcrumb-item active">Shopping Cart</li>
                             </ol>
                         </div>
                     </div>
                 </div><!-- Page Title Wrap -->
             </section>
             <section>
-                <div class="w-100 pt-160 pb-150 position-relative">
+                <div class="w-100 pt-140 pb-120 position-relative">
                     <div class="container">
-                        <div class="error-wrap text-center w-100">
-                            <div class="error-inner d-inline-block">
-                                <h1 class="mb-0">4<span class="thm-clr">0</span>4</h1>
-                                <h3 class="mb-0"><span>Ooops,</span>Page Not Found</h3>
-                                <p class="mb-0">Sorry, the page you were looking for does not <br> exist or is not available.</p>
-                                <form class="position-relative">
-                                    <input type="text" placeholder="Search your Keyword.....">
-                                    <button type="submit"><i class="fas fa-search"></i></button>
-                                </form>
-                                <a class="thm-btn wid-btn lft-icon fill-btn" href="index.html" title=""><i class="fas fa-home"></i> Back To Home<span></span></a>
-                            </div>
-                        </div><!-- Error Wrap -->
+                        <div class="cart-table w-100">
+                            <form class="cart-form w-100">
+                                <table class="product-cart">
+                                    <thead>
+                                        <tr>
+                                            <th>Product Detail</th>
+                                            <th>Price</th>
+                                            <th>Quantity</th>
+                                            <th>Total Price</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="product-thumb-title">
+                                                <div class="product-cart-box">
+                                                    <a href="product-detail.html" title=""><img class="img-fluid rounded-circle" src="assets/images/resources/cart-img1.jpg" alt="Cart Image 1"></a>
+                                                    <div class="product-cart-info">
+                                                        <h4 class="mb-0"><a href="product-detail.html" title="">New Mockup PSD</a></h4>
+                                                        <span class="product-rate d-inline-block"><i class="fas fa-star on"></i><i class="fas fa-star on"></i><i class="fas fa-star off"></i><i class="fas fa-star off"></i><i class="fas fa-star off"></i></span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="product-price"><span class="price">$250.00</span></td>
+                                            <td class="product-quantity">
+                                                <div class="quantity">
+                                                    <input class="qty" type="text" value="01">
+                                                </div>
+                                            </td>
+                                            <td class="product-subtotal"><span class="price thm-clr">$250.00</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="product-thumb-title">
+                                                <div class="product-cart-box">
+                                                    <a href="product-detail.html" title=""><img class="img-fluid rounded-circle" src="assets/images/resources/cart-img2.jpg" alt="Cart Image 2"></a>
+                                                    <div class="product-cart-info">
+                                                        <h4 class="mb-0"><a href="product-detail.html" title="">Jumper Blue Cap</a></h4>
+                                                        <span class="product-rate d-inline-block"><i class="fas fa-star on"></i><i class="fas fa-star on"></i><i class="fas fa-star off"></i><i class="fas fa-star off"></i><i class="fas fa-star off"></i></span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="product-price"><span class="price">$250.00</span></td>
+                                            <td class="product-quantity">
+                                                <div class="quantity">
+                                                    <input class="qty" type="text" value="01">
+                                                </div>
+                                            </td>
+                                            <td class="product-subtotal"><span class="price thm-clr">$250.00</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="product-thumb-title">
+                                                <div class="product-cart-box">
+                                                    <a href="product-detail.html" title=""><img class="img-fluid rounded-circle" src="assets/images/resources/cart-img3.jpg" alt="Cart Image 3"></a>
+                                                    <div class="product-cart-info">
+                                                        <h4 class="mb-0"><a href="product-detail.html" title="">Black Women T-Shirt</a></h4>
+                                                        <span class="product-rate d-inline-block"><i class="fas fa-star on"></i><i class="fas fa-star on"></i><i class="fas fa-star off"></i><i class="fas fa-star off"></i><i class="fas fa-star off"></i></span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="product-price"><span class="price">$250.00</span></td>
+                                            <td class="product-quantity">
+                                                <div class="quantity">
+                                                    <input class="qty" type="text" value="01">
+                                                </div>
+                                            </td>
+                                            <td class="product-subtotal"><span class="price thm-clr">$250.00</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="cart-btns w-100 bg-color3">
+                                    <ul class="mb-0 list-unstyled">
+                                        <li>Shipping:<span>Free</span></li>
+                                        <li>Sub Total:<span class="price">$250.00</span></li>
+                                        <li>Total:<span class="price">$250.00</span></li>
+                                    </ul>
+                                    <button class="thm-btn fill-btn" type="submit">Proceed To Checkout<span></span></button>
+                                </div>
+                            </form>
+                        </div><!-- Cart Table -->
                     </div>
                 </div>
             </section>
@@ -154,7 +238,7 @@
             <div class="bottom-bar w-100">
                 <div class="container">
                     <div class="bottom-bar-inner d-flex flex-wrap align-items-center justify-content-between w-100">
-                        <p class="mb-0"><a href="index.html" title="">Oce family reunion</a> - Copyright 2022. Developed by <a href="https://www.jairetechnology.com/" title="" target="_blank">Jaire Technology</a></p>
+                        <p class="mb-0"><a href="index.html" title="">Oce family reunion </a> - Copyright 2022. Design by <a href="https://JaireTechnology.com" title="" target="_blank">Jaire Technology</a></p>
                         <ul class="bottom-links list-unstyled d-inline-flex mb-0">
                             <li><a href="javascript:void(0);" title="">Corporate Form</a></li>
                             <li><a href="javascript:void(0);" title="">Event Booking Form</a></li>
@@ -173,6 +257,7 @@
         <script src="assets/js/counterup.min.js"></script>
         <script src="assets/js/jquery.downCount.js"></script>
         <script src="assets/js/jquery.fancybox.min.js"></script>
+        <script src="assets/js/jquery.bootstrap-touchspin.min.js"></script>
         <script src="assets/js/perfect-scrollbar.min.js"></script>
         <script src="assets/js/slick.min.js"></script>
         <script src="assets/js/isotope.min.js"></script>
